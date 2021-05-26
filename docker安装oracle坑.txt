@@ -1,0 +1,24 @@
+开启oracledata文件路径读写权限
+chmod -R a+w  /home/superuser/oradata
+启动docker
+sudo docker run -itd -p 1521:1521 -p 5500:5500 \
+-e ORACLE_SID=ORCL \
+-e ORACLE_PDB=ORCLPDB1 \
+-e ORACLE_PWD=Orcl123456 \
+-e ORACLE_CHARACTERSET=zhs16gbk \
+-e ORACLE_BASE=/opt/oracle \
+-e ORACLE_HOME=/opt/oracle/product/19c/dbhome_1 \
+-e PATH=/opt/oracle/product/19c/dbhome_1/bin:/opt/oracle/product/19c/dbhome_1/OPatch/:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
+-v /home/superuser/oradata:/opt/oracle/oradata \
+--name myoracle \
+--privileged=true \
+registry.cn-hangzhou.aliyuncs.com/zhuyijun/oracle:19c
+
+日志在
+/var/lib/docker/containers/[docker hash id]
+
+进入oracle实例
+docker exec -it myoracle /bin/bash
+临时登录oracle
+sqlplus / as sysdba
+

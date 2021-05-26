@@ -1,0 +1,5 @@
+--注意：修改默认值如果是日期格式，只能用下面第一种方式
+
+ALTER TABLE car_tm_supervise MODIFY COLUMN update_time datetime NULL DEFAULT now()；
+
+alter table car_tm_supervise alter column id_type set default '1';

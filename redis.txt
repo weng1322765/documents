@@ -1,0 +1,5 @@
+windows启动redis服务
+redis-server redis.windows.conf
+
+redis客户端
+redis-cli

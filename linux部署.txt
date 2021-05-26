@@ -1,0 +1,29 @@
+环境：10.0.9.10
+用户：anytxnv2
+密码：jrx123
+
+目录 /home/anytxnv2/server/anytxn-XXXXX-[version]
+
+上传tar.gz包
+解压命令 tar -xzvf XXXXX.tar.gz
+只需替换jar包
+
+切换到bin下执行脚本
+先执行  source env-dev.sh
+再执行 sh run.sh [参数]
+参数：status  stop  start
+
+查看当前编码格式
+set fileencoding
+格式转换
+set ff=unix
+
+后台启动nohup java -jar XXXXX.jar >> nohup.log
+关闭 ps -aux | grep java
+        kill -s 9 XXX
+
+
+useradd [用户名]  创建用户
+passwd  [密码]   修改密码
+su - [用户名]       切换用户
+

@@ -1,0 +1,65 @@
+git创建本地分支
+git checkout -b XXXX
+将此本地分支创建并提交到远程库
+git push --set-upstream origin XXX
+
+
+删除分支：$ git branch -d [name] ---- -d选项只能删除已经参与了合并的分支，对于未有合并的分支是无法删除的。如果想强制删除一个分支，可以使用-D选项
+合并分支：$ git merge [name] ----将名称为[name]的分支与当前分支合并
+创建远程分支(本地分支push到远程)：$ git push origin [name]
+删除远程分支：$ git push origin :heads/[name]
+
+更新远程仓库命令
+git fetch origin 
+或者
+git remote update origin --prune
+
+在本地创建指定远程分支
+git checkout -b [本地分支名] [远程分支名]
+git checkout -b OPDCN-670 master
+
+将本地分支上传git仓库
+git push --set-upstream origin [本地分支名]
+git push --set-upstream origin OPDCN-670
+
+
+本地库关联远程库（找不到origin）
+git remote add origin https://git.homecreditcfc.cn/it-dev/ddap/psbc-offline-auth.git
+
+
+删除本地分支
+git branch -d [分支名]
+
+
+新建项目上传远程仓库
+git create repository here
+git add 
+git commit -m "first commit"
+git push --set-upstream https://git.homecreditcfc.cn/it-dev/ddap/psbc-offline-auth.git master
+
+
+
+清空保存的用户名密码
+git config --system --unset credential.helper
+
+记住用户名密码
+git config --global credential.helper store
+
+导出git提交历史记录
+
+git log --pretty=format:"%t, %s" --since="100 day ago" >> d:/commit.log
+
+git log 查看HEAD
+
+撤销最后提交状态
+git reset --hard "HEAD^"
+
+
+#如果对于已修改的所有内容都不想要了，想回到最干净的上个提交版本的状态：
+git reset
+git checkout .
+git clean -fdx
+
+
+本地merge
+git merge --no-ff develop
