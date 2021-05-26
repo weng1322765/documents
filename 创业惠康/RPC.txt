@@ -1,0 +1,322 @@
+getFloEc 
+his.floRpc
+入参
+[{
+"actionType": "getFloEc",
+"sdVistpCd":"114",
+"idSrv":"60823252032e3d3a0c9ce650",
+"idSrvca":"6080e082032e3d3a0cdc8e05",
+"sdSrvtpCd":"2106",
+"idDepPatBel":"6045e6add0081238ab9d3940",
+"idDepOrd":"6045e46dd0081238ab9ba5c0",
+"sdOrdrecurtpCd":"21",
+"sdMedordtpCd":"1",
+"idOrg":"6045d1b8d0081238ab92050a"
+}]
+出参
+{
+    "code": 200,
+    "msg": null,
+    "body": {
+        "meta": {
+            "statusCode": "200",
+            "message": "success"
+        },
+        "data": {
+            "data": [
+                {
+                    "idOrgEc": "6045d1b8d0081238ab92050a",
+                    "naOrgEc": "天津市南开区中医医院",
+                    "idDepEc": "6082767621997e2cbfbf30ca",
+                    "naDepEc": "超声科",
+                    "sort": 2816,
+                    "idsSrv": null
+                }
+            ]
+        },
+        "notSetResult": false
+    },
+    "properties": null
+}
+
+
+价格接口
+his.generalSrvPriceRpc
+入参
+[{
+"actionType": "getSrvPrice",
+"idOrg": "5d109a6e6c078c02aca45d7d",
+"idSrv": "5f87ba3c21e44f3270f33ede",
+"idPd": "5d632f8b6c078c1b50a76fbd",
+"naPdunit": "g",
+"idPricaP": "5df08c0f6c078c0b0404b29c"
+}]
+出参
+{
+    "code": 200,
+    "msg": null,
+    "body": {
+        "meta": {
+            "statusCode": "200",
+            "message": "success"
+        },
+        "data": {
+            "data": {
+                "price": "0.0028",
+                "idSrvList": null,
+                "goodsPriceList": [
+                    {
+                        "hiBdPdUnitList": null,
+                        "priUnitBas": "0.0008",
+                        "priUnitInvt": null,
+                        "idPd": "5d632f8b6c078c1b50a76fbd"
+                    }
+                ],
+                "srvNa": "吉非罗齐胶囊",
+                "idSrv": "5f87ba3c21e44f3270f33ede",
+                "result": null,
+                "message": null,
+                "idPricaP": "5df08c0f6c078c0b0404b29c"
+            }
+        },
+        "notSetResult": false
+    },
+    "properties": null
+}
+
+searchAddSrv
+his.generalSrvRpc
+入参
+[{
+"actionType": "searchAddSrv",
+"data":{
+"idSrv": ["60823252032e3d3a0c9ce650"],
+"sdsSrvtpCd":["2106"],
+"fgOrdplace":"0",
+"fgPd":"1",
+"idsSrvca":["5cef7f006c078c12443103fc"],
+"sdsVistpCd":["114"],
+"sdSrvvisctrCd":["F"]
+}
+}]
+出参
+{
+    "code": 200,
+    "msg": null,
+    "body": {
+        "meta": {
+            "statusCode": "200",
+            "message": "success"
+        },
+        "data": {
+            "data": {
+                "start": 1,
+                "limit": 10,
+                "properties": null,
+                "total": 2,
+                "items": [
+                    {
+                        "idSrv": "5cf75bc46c078c14f0e6e073",
+                        "na": "B超头部",
+                        "cd": "BC001",
+                        "des": null,
+                        "sdSrvtp": "5c1710dec33ef01d1c5d436a",
+                        "sdSrvtpCd": "2106",
+                        "sdSrvtpNa": "B超",
+                        "srvpriRef": "100",
+                        "unitSrvMed": "次",
+                        "fgPd": "1",
+                        "idFreqcaDef": null,
+                        "spec": null,
+                        "idUsgedesDef": null,
+                        "pdunitSale": null,
+                        "sdSrvcombtpCd": null,
+                        "sdSrvcombtp": null,
+                        "sdSrvcombtpNa": null,
+                        "idSrvCa": "5cef7f006c078c12443103fc",
+                        "py": "BCTB",
+                        "wb": "BFUU",
+                        "instr": null,
+                        "sdSrvformCd": null,
+                        "idUsgeDef": null,
+                        "quanUnitSrvMed": "1",
+                        "sdPharm": null,
+                        "sdPharmCd": null,
+                        "sdPharmNa": null,
+                        "isHighRisk": false
+                    },
+                    {
+                        "idSrv": "5cf0cdfa6c078c313c7f65a0",
+                        "na": "B超胸部",
+                        "cd": "BC002",
+                        "des": null,
+                        "sdSrvtp": "5c1710dec33ef01d1c5d436a",
+                        "sdSrvtpCd": "2106",
+                        "sdSrvtpNa": "B超",
+                        "srvpriRef": "100",
+                        "unitSrvMed": "次",
+                        "fgPd": "1",
+                        "idFreqcaDef": null,
+                        "spec": null,
+                        "idUsgedesDef": null,
+                        "pdunitSale": null,
+                        "sdSrvcombtpCd": null,
+                        "sdSrvcombtp": null,
+                        "sdSrvcombtpNa": null,
+                        "idSrvCa": "5cef7f006c078c12443103fc",
+                        "py": "BCXB",
+                        "wb": "BFEU",
+                        "instr": null,
+                        "sdSrvformCd": null,
+                        "idUsgeDef": null,
+                        "quanUnitSrvMed": "0",
+                        "sdPharm": null,
+                        "sdPharmCd": null,
+                        "sdPharmNa": null,
+                        "isHighRisk": false
+                    }
+                ]
+            }
+        },
+        "notSetResult": false
+    },
+    "properties": null
+}
+
+
+
+getSrvAttribute
+his.generalSrvRpc
+入参
+[{
+"actionType": "getSrvAttribute",
+"data":{
+"idSrv": "60823252032e3d3a0c9ce650",
+"idOrg":"6045d1b8d0081238ab92050a",
+"idDep":"6045e6add0081238ab9d3940"
+}
+
+}]
+出参
+{
+    "code": 200,
+    "msg": null,
+    "body": {
+        "meta": {
+            "statusCode": "200",
+            "message": "success"
+        },
+        "data": {
+            "data": {
+                "hiBdSrv": {
+                    "insertUser": "6045d350d0081238ab92cfdb",
+                    "insertTime": "2021-04-23 10:34:58",
+                    "updateUser": "608646fa21997e105b3f5a2a",
+                    "updateTime": "2021-05-07 16:24:05",
+                    "idTet": "cszzyzh",
+                    "idBdmd": "6045d4fed0081238ab938cf9",
+                    "idSrv": "60823252032e3d3a0c9ce650",
+                    "ver": "5bebd303ea0c700a6cdc21f4",
+                    "verCd": "1",
+                    "sdSrvcls": "5bdbdfe49b05f724bc967ae9",
+                    "sdSrvclsCd": "2",
+                    "sdSrvtp": "5c1710dec33ef01d1c5d436a",
+                    "sdSrvtpCd": "2106",
+                    "idSrvca": "6080e082032e3d3a0cdc8e05",
+                    "cd": "10130002",
+                    "na": "多普勒彩超-部位加收",
+                    "des": null,
+                    "py": "DPLCC-BWJS",
+                    "wb": "QUAEF-UWLN",
+                    "instr": null,
+                    "unitSrvMed": "次",
+                    "idPrimd": "604702af032e3d16a73e1323",
+                    "sdSrvvisctr": "5bebd48bea0c700a6cdc2266",
+                    "sdSrvvisctrCd": "F",
+                    "sdsVistp": null,
+                    "sdsVistpCd": null,
+                    "fgOrdcont": "1",
+                    "fgOrdplace": "1",
+                    "fgPd": "0",
+                    "idFreqcaDef": "607503cd032e3d410f5fc230",
+                    "quanUnitSrvMed": 1.0,
+                    "idUsgeDef": null,
+                    "idUsgedesDef": null,
+                    "sdSrvcombtp": "5bdbe78de881e0187c525687",
+                    "sdSrvcombtpCd": "1",
+                    "fgSrvsc": "0",
+                    "sdSrvform": "5d317b2014ad2e17642cd97b",
+                    "sdSrvformCd": "201",
+                    "sdSrvest": null,
+                    "sdSrvestCd": null,
+                    "sdSrvexecmd": null,
+                    "sdSrvexecmdCd": null,
+                    "sdPrimd": "5bea6c29ea0c703978f10cc8",
+                    "sdPrimdCd": "1",
+                    "sdHipl": "5d43e08fb7cef0085c6c4593",
+                    "sdHiplCd": "114",
+                    "fgSrvRec": "0",
+                    "fgSrvFun": "0",
+                    "fgPdbind": "0",
+                    "sdPdbindoppo": null,
+                    "sdPdbindoppoCd": null,
+                    "fgPdbindoppo": "0",
+                    "fgSrvrtemp": "0",
+                    "fgSrvrtsrv": "0",
+                    "fgMultiUnitSrvMed": "0",
+                    "fgSrvLimit": "0",
+                    "fgSrvAls": "1",
+                    "fgUdf": null,
+                    "idOrdsrvudfca": null,
+                    "fgActive": "1",
+                    "fgOrdudf": null,
+                    "idsUsge": null,
+                    "idsFreqca": null,
+                    "fgDsign": "0"
+                },
+                "hiBdSrvOrgList": null,
+                "hiBdSrvAlsList": null,
+                "hiBdSrvSetList": null,
+                "hiBdSrvPkgList": null,
+                "srvLabRal": null,
+                "srvExamRal": null,
+                "srvNurRal": null,
+                "hiBdSrvmedi": null,
+                "hiBdSrvtcm": null,
+                "hiBdSrvherb": null,
+                "hiBdSrvbt": null,
+                "hiBdSrvexam": {
+                    "insertUser": "6045d350d0081238ab92cfdb",
+                    "insertTime": "2021-04-23 10:34:59",
+                    "updateUser": "608646fa21997e105b3f5a2a",
+                    "updateTime": "2021-05-07 16:24:05",
+                    "idTet": "cszzyzh",
+                    "idBdmd": "6045d4fed0081238ab938cf9",
+                    "idSrv": "60823252032e3d3a0c9ce650",
+                    "desExamnote": null,
+                    "fgSrvexamfu": "0",
+                    "sdDiecontiDes": null,
+                    "sdDiecontiDesCd": null,
+                    "sdDieinfectDes": null,
+                    "sdDieinfectDesCd": null,
+                    "fixative": null,
+                    "sdExamDes": null,
+                    "sdExamDesCd": null
+                },
+                "hiBdSrvlab": null,
+                "hiBdSrvnur": null,
+                "hiBdSrvsurg": null,
+                "hiBdSrvcure": null,
+                "hiBdSrvcsls": null,
+                "hiBdSrvmedm": null,
+                "hiBdSrvphe": null,
+                "hiBdSrvday": null,
+                "hiBdSrvadm": null,
+                "hiBdSrvcls": null,
+                "hiBdSrvPdPro": null
+            }
+        },
+        "notSetResult": false
+    },
+    "properties": null
+}

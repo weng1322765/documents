@@ -1,0 +1,65 @@
+1、验证人员-服务开立权限接口：
+hi.logic.hpl.med.medOrd.docutilsinterface.impl.DocStaUtilsImpl#getUserAccess
+入参idSrv
+人员id从登录信息取String userId = UserInfoUtils.getInstance().getUserId();
+出参
+Result.success().addValue("srvBatchResponse", srvBatchResponse);	
+Result.failure(Error.VALIDATION_EXCEPTION.getCode(), "医生【" + na + "】不具备服务项目【" + srvNa + "】的开立权限，无法开立此服务！").addValue("flag", "1");
+
+手术单独校验
+@CheckSurgUserAuthAnno注解
+CheckSurgUserAuthAspect 切面
+
+new LogicError(Error.BUSINESS_EXCEPTION.getCode(),"您没有手术开立权限，请到人员维护中检查是否维护了手术开立权限");
+
+2、验证医疗单可开立服务类型串接口
+暂无
+
+List<DictionaryItemEntity> dictionaryItemEntities=DicService.getDicItemCd("hi.his.srvform", cdList);
+验证ctrl2
+
+3、验证默认频次分类
+hi.logic.hpl.med.medOrd.docutilsinterface.impl.DocStaUtilsImpl#getIdFreqcaDefByIdSrv
+入参idSrv
+出参Result.success().addValue("hiBdFreqcaListByidFreqca", hiBdFreqcaListByidFreqca);
+List<HiBdFreqca> hiBdFreqcaListByidFreqca
+
+
+4、验证服务组合类型与定价模式对应关系
+
+hi.logic.hpl.med.medOrd.docutilsinterface.impl.DocStaUtilsImpl#checkidPrimdCdOpen
+入参idSrv
+出参 Result.success().addValue("idPrimdCd", idPrimdCd);
+String
+
+
+5、验证服务价格
+(1)hi.logic.hpl.med.medOrd.docutilsinterface.impl.DocStaUtilsImpl#getSrvPriceOpen
+入参idSrv，idVismed
+出参 Result.success().addValue("srvPriceResponse", srvPriceResponse)
+SrvPriceResponse.class
+
+6、验证服务绑定的医健物品
+暂无
+SrvPriceDao.getHiBdPdList
+
+7、验证医健物品——包装单位及与基本单位换算系数
+hi.logic.hiBd.pd.interfaces.HiBdPdInterface#getPdAndPri
+
+入参idPd
+出参Map, key: "hiBdPdUnitList"
+List<HiBdPdUnit>里面包含换算系数
+
+
+8、药品服务项目开立限制
+hi.interfaces.bd.srv.rpc.HiBdSrvpdLimInterfaceRpc
+入参
+list 
+
+idOrg
+idSrv
+na 服务名称？
+idMedi  开立剂量
+idFreq 频次
+sdSrvtpCd  服务项目类型编码
+sdSrvcombtpCd 服务项目组合类型编码
