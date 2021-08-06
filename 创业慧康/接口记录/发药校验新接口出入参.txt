@@ -1,0 +1,103 @@
+X-Service-Id: his.limitCheckBeforeRpc
+X-Service-Method: checkService
+
+
+[
+    {
+        "idsExmedpdipapitm": [
+            "60ef9f02032e3d2f7c82b7ce",
+            "60ef9f02032e3d2f7c82b7cc",
+            "60ef9f02032e3d2f7c82b7cb",
+            "60ef9f02032e3d2f7c82b7ca",
+            "60ef9f02032e3d2f7c82b7c9"
+        ]
+    }
+]
+
+
+
+{
+    "code": 200,
+    "msg": null,
+    "body": {
+        "flag": true,
+        "resultList": [
+            {
+                "idExmedpdipapitm": "60ef9f02032e3d2f7c82b7ce",
+                "idSrv": "60a21d4c032e3d2fa1050813",
+                "naPd": null,
+                "depFlag": true,
+                "empFlag": false,
+                "valPdSaleUnit": null,
+                "empNumQuanctr": null,
+                "empNumQuanused": null,
+                "empNumQuanOver": null,
+                "depNumQuanctr": 10,
+                "depNumQuanused": 0,
+                "depNumQuanOver": 20,
+                "euTip": "1"
+            },
+            {
+                "idExmedpdipapitm": "60ef9f02032e3d2f7c82b7cc",
+                "idSrv": "60a21d4c032e3d2fa1050813",
+                "naPd": null,
+                "depFlag": true,
+                "empFlag": false,
+                "valPdSaleUnit": null,
+                "empNumQuanctr": null,
+                "empNumQuanused": null,
+                "empNumQuanOver": null,
+                "depNumQuanctr": 10,
+                "depNumQuanused": 0,
+                "depNumQuanOver": 20,
+                "euTip": "1"
+            },
+            {
+                "idExmedpdipapitm": "60ef9f02032e3d2f7c82b7cb",
+                "idSrv": "60a21d4c032e3d2fa1050813",
+                "naPd": null,
+                "depFlag": true,
+                "empFlag": false,
+                "valPdSaleUnit": null,
+                "empNumQuanctr": null,
+                "empNumQuanused": null,
+                "empNumQuanOver": null,
+                "depNumQuanctr": 10,
+                "depNumQuanused": 0,
+                "depNumQuanOver": 20,
+                "euTip": "1"
+            },
+            {
+                "idExmedpdipapitm": "60ef9f02032e3d2f7c82b7ca",
+                "idSrv": "60a21d4c032e3d2fa1050813",
+                "naPd": null,
+                "depFlag": true,
+                "empFlag": false,
+                "valPdSaleUnit": null,
+                "empNumQuanctr": null,
+                "empNumQuanused": null,
+                "empNumQuanOver": null,
+                "depNumQuanctr": 10,
+                "depNumQuanused": 0,
+                "depNumQuanOver": 20,
+                "euTip": "1"
+            },
+            {
+                "idExmedpdipapitm": "60ef9f02032e3d2f7c82b7c9",
+                "idSrv": "60a21d4c032e3d2fa1050813",
+                "naPd": null,
+                "depFlag": true,
+                "empFlag": false,
+                "valPdSaleUnit": null,
+                "empNumQuanctr": null,
+                "empNumQuanused": null,
+                "empNumQuanOver": null,
+                "depNumQuanctr": 10,
+                "depNumQuanused": 0,
+                "depNumQuanOver": 20,
+                "euTip": "1"
+            }
+        ]
+    },
+    "properties": null
+}

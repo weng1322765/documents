@@ -1,0 +1,104 @@
+[
+    {
+        "idVismed": "60b08a70032e3d5a67b6e5b9",
+        "idTet": "zhongshan",
+        "idOrg": "5d109a6e6c078c02aca45d7d",
+        "sdDieproctpCd":"51",
+        "actionType":"getDiesList"
+    }
+]
+
+
+
+
+{
+    "code": 200,
+    "msg": null,
+    "body": {
+        "meta": {
+            "statusCode": "200",
+            "message": "success",
+            "metas": []
+        },
+        "data": {
+            "data": {
+                "meta": {
+                    "statusCode": "200",
+                    "message": "success",
+                    "metas": []
+                },
+                "data": {
+                    "data": {
+                        "idMeddie": "60d586cd4e8b654f3034d040",
+                        "sdVistpCd": "114",
+                        "deleteFlag": null,
+                        "sdDiesubjtpCd": "1",
+                        "desDieMaj": null,
+                        "desDies": null,
+                        "idEmpMeddieSign": "5d1338e86c078c02aca75222",
+                        "sdDieproctp": "5d37ced3b7cef04b4455bee7",
+                        "dtMeddieSign": "2021-06-25 15:33:29",
+                        "dtDie": null,
+                        "updateUser": null,
+                        "updateTime": null,
+                        "list": [
+                            {
+                                "idMeddiedt": "60d586cf4e8b654f3034d3f8",
+                                "idMeddiedtGroup": null,
+                                "idTet": null,
+                                "idOrg": null,
+                                "sdVistp": "5c1894a2867f784ffcb9bc77",
+                                "sdVistpCd": "114",
+                                "idMeddie": "60d586cd4e8b654f3034d040",
+                                "sn": 1,
+                                "idDie": "5ef2bb15032e3d5825fc0746",
+                                "naDie": "疾病",
+                                "fgSub": null,
+                                "idDiePar": null,
+                                "desDie": null,
+                                "fgDiemaj": "1",
+                                "fgDiesusp": null,
+                                "fgDieunor": null,
+                                "sdDiesubjtp": "5beb8bbfea0c700a6cdc20f5",
+                                "sdDiesubjtpCd": "1",
+                                "sdDieopertp": "5beb9430ea0c700a6cdc2107",
+                                "sdDieopertpCd": "0",
+                                "cdDie": "A00123",
+                                "insertUser": null,
+                                "insertTime": null,
+                                "updateUser": null,
+                                "updateTime": null,
+                                "deleteUser": null,
+                                "deleteTime": null,
+                                "deleteFlag": null,
+                                "dtDie": null,
+                                "sdDiecardwrista": "604b1aacd0081261e7aa8ed7",
+                                "sdDiecardwristaCd": "0",
+                                "idEmpMeddieSign": "5d1338e86c078c02aca75222",
+                                "dtMeddieSign": "2021-06-25 15:33:29"
+                            }
+                        ],
+                        "idEmpDie": "5d1338e86c078c02aca75222",
+                        "idVismed": "60b08a70032e3d5a67b6e5b9",
+                        "insertTime": null,
+                        "insertUser": null,
+                        "sdDiesubjtp": "5beb8bbfea0c700a6cdc20f5",
+                        "cdDieMaj": "A00123",
+                        "deleteTime": null,
+                        "sdVistp": "5c1894a2867f784ffcb9bc77",
+                        "naDieMaj": "疾病",
+                        "deleteUser": null,
+                        "idDepDie": "5d11c7a56c078c02aca5c9bd",
+                        "idDieMaj": "5ef2bb15032e3d5825fc0746",
+                        "idTet": null,
+                        "sdDieproctpCd": "51",
+                        "idOrg": null
+                    }
+                },
+                "notSetResult": false
+            }
+        },
+        "notSetResult": false
+    },
+    "properties": null
+}

@@ -1,0 +1,18 @@
+hi.interfaces.hpl.med.ord.docsta.service.impl.HiHplMedDieImpl#setDieProctp
+
+入参：
+sdDiesubjtpCd  ->诊断过程类型
+sdDieproctpCd ->诊断学科类型编码
+idVismed          ->医疗就诊流程id
+idTet                ->租户
+idOrg               ->机构
+诊断及其明细数据HiHplMedDie和HiHplMedDieDt对应实体类
+
+处理过程：
+1、sdDieproctpCd 必须为20
+2、sdDiesubjtpCd不能等于1也不等于2
+3、根据idVismed+idTet+idOrg查HI_HPL_MED_DIE表，筛出sdDieproctpCd等于20的数据
+     并删除，拿出idMeddie，查找并删除对应HI_HPL_MED_DIE_DT明细表
+4、根据传入的实体类数据，重新保存HI_HPL_MED_DIE和HI_HPL_MED_DIE_DT表
+5、更新HI_HPL_MED_DIE_DT表设置sn=1, fgDiemaj=0,fgDiesusp=0,fgDieunor=0,fgSub=0
+     （序号，诊断主要标志，疑似诊断标志，待查诊断标志，二级诊断标志）
